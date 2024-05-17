@@ -18,6 +18,8 @@ public class CardController : MonoBehaviour
     [SerializeField] private Transform parent_TF;
     [SerializeField] private Button card_Btn;
     [SerializeField] private List<Button> cardBtns = new List<Button>();
+    [SerializeField] private Text correctGuess_Txt;
+    [SerializeField] private Text playedTurns_Txt;
 
     private int cardMaxVal;
 
@@ -83,8 +85,9 @@ public class CardController : MonoBehaviour
             secGuessPuzzle = cardPuzzles[secGuessIndex].name;
             cardBtns[secGuessIndex].image.sprite = cardPuzzles[secGuessIndex];
             guessCount++;
+            playedTurns_Txt.text = guessCount.ToString();
+
             StartCoroutine(ICheckPuzzleMatch());
-            
         }
     }
 
@@ -114,7 +117,7 @@ public class CardController : MonoBehaviour
             cardBtns[secGuessIndex].image.sprite = cardBG_2D;
         }
 
-        //yield return new WaitForSeconds(0.1f);
+        //yield return new WaitForSeconds(0.3f);
 
         firstGuess = false;
         secGuess = false;
@@ -123,6 +126,7 @@ public class CardController : MonoBehaviour
     void checkGameFinish()
     {
         guessCorrectCount++;
+        correctGuess_Txt.text = guessCorrectCount.ToString();
 
         if( guessCorrectCount == gameGuessCount)
         {
