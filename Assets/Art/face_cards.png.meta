@@ -125,7 +125,7 @@ TextureImporter:
         width: 214
         height: 313
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: face_cards_3
+      name: face_cards_1
       rect:
         serializedVersion: 2
         x: 779
@@ -146,7 +146,7 @@ TextureImporter:
         width: 213
         height: 315
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,49 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: face_cards_4
-      rect:
-        serializedVersion: 2
-        x: 725
-        y: 678
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fad29ac4d232b3147b588e6bf4797043
-      internalID: 2112977282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: face_cards_5
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 678
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99a2b39b42f806a428195ec317436ba4
-      internalID: 1796864466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: face_cards_6
+      name: face_cards_2
       rect:
         serializedVersion: 2
         x: 32
@@ -209,7 +167,7 @@ TextureImporter:
         width: 213
         height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: face_cards_9
+      name: face_cards_3
       rect:
         serializedVersion: 2
         x: 779
@@ -230,7 +188,7 @@ TextureImporter:
         width: 213
         height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: face_cards_10
+      name: face_cards_4
       rect:
         serializedVersion: 2
         x: 32
@@ -251,7 +209,7 @@ TextureImporter:
         width: 214
         height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: face_cards_13
+      name: face_cards_5
       rect:
         serializedVersion: 2
         x: 779
@@ -272,7 +230,7 @@ TextureImporter:
         width: 213
         height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,19 +254,15 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       face_cards_0: 180050627
-      face_cards_1: 2028352561
-      face_cards_10: -183019559
+      face_cards_1: 66135377
       face_cards_11: -2010934891
       face_cards_12: -357967489
-      face_cards_13: 1185418939
-      face_cards_2: 1625112731
-      face_cards_3: 66135377
-      face_cards_4: 2112977282
-      face_cards_5: 1796864466
-      face_cards_6: 484929167
+      face_cards_2: 484929167
+      face_cards_3: -26423523
+      face_cards_4: -183019559
+      face_cards_5: 1185418939
       face_cards_7: -1117501667
       face_cards_8: -971667822
-      face_cards_9: -26423523
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

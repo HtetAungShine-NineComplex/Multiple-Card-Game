@@ -5,18 +5,5 @@ using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
-     private Button m_Btn;
-    private void Awake()
-    {
-        m_Btn = GetComponent<Button>();
-    }
-    private void Start()
-    {
-        m_Btn.onClick.AddListener(OnClickMe);
-    }
-
-    private void OnClickMe()
-    {
-        Debug.Log(gameObject.name);
-    }
+    public int CardIndex;
 }

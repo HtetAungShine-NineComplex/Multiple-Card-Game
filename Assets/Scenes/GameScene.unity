@@ -192,7 +192,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 724929118}
   - component: {fileID: 724929119}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: CardController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,6 +354,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardBG_2D: {fileID: 510543973, guid: b6d958df4f943f34b881050241f14369, type: 3}
+  puzzles:
+  - {fileID: 180050627, guid: 0b5451416895ada40ad933b09c52bfc5, type: 3}
+  - {fileID: 66135377, guid: 0b5451416895ada40ad933b09c52bfc5, type: 3}
+  - {fileID: 484929167, guid: 0b5451416895ada40ad933b09c52bfc5, type: 3}
+  - {fileID: -26423523, guid: 0b5451416895ada40ad933b09c52bfc5, type: 3}
+  - {fileID: -183019559, guid: 0b5451416895ada40ad933b09c52bfc5, type: 3}
+  - {fileID: 1185418939, guid: 0b5451416895ada40ad933b09c52bfc5, type: 3}
+  cardPuzzles: []
   parent_TF: {fileID: 1524219235}
   card_Btn: {fileID: 3212256317472127765, guid: 0e5f1e1ef1b58d4488d0431bd464e228, type: 3}
   cardBtns: []
@@ -522,7 +530,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 135, y: 200}
+  m_CellSize: {x: 300, y: 450}
   m_Spacing: {x: 50, y: 50}
   m_Constraint: 1
   m_ConstraintCount: 4
