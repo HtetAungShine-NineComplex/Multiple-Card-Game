@@ -66,6 +66,8 @@ public class CardController : MonoBehaviour
 
     public void ClickAPuzzle(Card card) //Card OnClick Event
     {
+        SoundManager.Instance.PlayCardFlipSound();
+
         int puzzleIndex = card.CardIndex;
         if (!firstGuess)
         {
@@ -94,6 +96,7 @@ public class CardController : MonoBehaviour
         if(firstGuessPuzzle == secGuessPuzzle && firstGuessIndex != secGuessIndex)
         {
             yield return new WaitForSeconds (0.2f);
+            SoundManager.Instance.PlayCardMatchSound();
 
             cardBtns[firstGuessIndex].interactable = false;
             cardBtns[secGuessIndex].interactable = false;
@@ -105,6 +108,7 @@ public class CardController : MonoBehaviour
         else
         {
             yield return new WaitForSeconds(0.2f);
+            SoundManager.Instance.PlayCardMisMatchSound();
 
             cardBtns[firstGuessIndex].image.sprite = cardBG_2D;
             cardBtns[secGuessIndex].image.sprite = cardBG_2D;
@@ -122,6 +126,7 @@ public class CardController : MonoBehaviour
 
         if( guessCorrectCount == gameGuessCount)
         {
+            SoundManager.Instance.PlayGameFinishSound();
             Debug.Log("Game is finished");
             Debug.Log("It took you"+ guessCount + "to finish the game");
         }
