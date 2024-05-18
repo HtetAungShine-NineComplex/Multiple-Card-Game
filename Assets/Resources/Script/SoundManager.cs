@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class SoundManager : Singleton<SoundManager>
 {
+    [Header("AudioSource")]
     [SerializeField] private AudioSource inGameAudioSource;
     [SerializeField] private AudioSource finishGameAudioSource;
 
+    [Header("AudioClip")]
     [SerializeField] private AudioClip cardFlipSound;
     [SerializeField] private AudioClip cardMatchSound;
     [SerializeField] private AudioClip cardMisMatchSound;
     [SerializeField] private AudioClip gameFinishSound;
+
 
     public void PlayCardFlipSound()
     {
