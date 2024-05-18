@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClearLocalData : MonoBehaviour
+public class ClearLocalDataUI : MonoBehaviour
 {
     [SerializeField] private Button clearLocalData_Btn;
 

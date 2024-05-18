@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6d958df4f943f34b881050241f14369
+guid: ea56716876e3802418053cb77be41dee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Card_BG
+      name: Card_Art_0
       rect:
         serializedVersion: 2
-        x: 1628
-        y: 1159
-        width: 682
-        height: 1004
+        x: 45
+        y: 1032
+        width: 598
+        height: 1011
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e0966944564183409e9a618c964156d
-      internalID: 510543973
+      spriteID: e541b5e868998ed43a9631936efa0561
+      internalID: -1365224991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Card_Art_1
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1031
+        width: 598
+        height: 1011
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e023381b8417d724c801fa7d14b14ee1
+      internalID: -605914077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Card_Back_Art
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 1024
+        width: 598
+        height: 1016
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b792f1875d2e0240a6f001d40c89add
+      internalID: -211024668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Card_Art_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3
+        width: 598
+        height: 1011
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d5a7501b8c81b4c915e8f9e3dd0d7b
+      internalID: 403273914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Card_Art_3
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 5
+        width: 598
+        height: 1011
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca8c0a086d3bdb41a3e1c06f6065654
+      internalID: -2098664198
       vertices: []
       indices: 
       edges: []
@@ -148,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Card_BG: 510543973
-      Gold Premium Cardxxxhdpi_0: -1191282954
-      Gold Premium Cardxxxhdpi_1: 1595710917
-      Gold Premium Cardxxxhdpi_2: -1825150692
-      Gold Premium Cardxxxhdpi_4: -1993817597
+      Card_Art_0: -1365224991
+      Card_Art_1: -605914077
+      Card_Art_2: 403273914
+      Card_Art_3: -2098664198
+      Card_Back_Art: -211024668
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
