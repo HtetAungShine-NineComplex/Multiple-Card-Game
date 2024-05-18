@@ -2,7 +2,8 @@ using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
-{   
+{
+    #region Fields
     [SerializeField] private CardManager cardManager;
     [SerializeField] private UIManager uiManager;
     [SerializeField] private PersistenceManager persistenceManager;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     
     private bool firstGuess, secGuess;
     private int sameCardCount = 0;
+    #endregion
 
     private void Awake()
     {
@@ -64,7 +66,7 @@ public class GameManager : MonoBehaviour
         if (PlayerPrefs.HasKey(GLOBALCONST.FIFTH_CARD_KEY))
         {
             persistenceManager.getCards(cardManager.GetCardPuzzles(), cardManager.GetPuzzelSprites());
-            cardManager.removeRecentSameCards(persistenceManager.GetRecentSameCardIndexList());
+            cardManager.RemoveRecentSameCards(persistenceManager.GetRecentSameCardIndexList());
         }
         else
         {
@@ -83,8 +85,8 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
             soundManager.PlayCardMatchSound();
 
-            cardManager.removeSameCards(firstGuessIndex);
-            cardManager.removeSameCards(secondGuessIndex);
+            cardManager.RemoveSameCards(firstGuessIndex);
+            cardManager.RemoveSameCards(secondGuessIndex);
             sameCardCount += 2;
             persistenceManager.setSameCards(sameCardCount, firstGuessIndex, secondGuessIndex);
 
@@ -105,7 +107,8 @@ public class GameManager : MonoBehaviour
         secGuess = false;
     }
 
-    public void OnCardClick(Card card) //Card OnClick Event
+    
+    public void OnCardClick(Card card) 
     {
        soundManager.PlayCardFlipSound();
 
@@ -130,7 +133,7 @@ public class GameManager : MonoBehaviour
 
             StartCoroutine(ICheckPuzzleMatch());
         }
-    }
+    } //Card OnClick Event
 
 
 }

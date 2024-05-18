@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class CardManager : MonoBehaviour
 {
+    #region Fields
     [SerializeField] private Sprite cardBackgroundSprite;
     [SerializeField] private List<Sprite> puzzleSprites;
     [SerializeField] private Button cardButtonPrefab;
@@ -16,6 +17,7 @@ public class CardManager : MonoBehaviour
     private List<Sprite> cardPuzzles = new List<Sprite>();
 
     private float showPuzzleInterval = 1f;
+    #endregion
 
     public List<Sprite> GetCardPuzzles()
     {
@@ -71,6 +73,52 @@ public class CardManager : MonoBehaviour
         StartCoroutine(IShowPuzzle());
     }
 
+    public void ShuffleCards()
+    {
+        shuffleList(cardPuzzles);
+    }
+
+    public void SetCardsToButtons()
+    {
+        for (int i = 0; i < cardButtons.Count; i++)
+        {
+            cardButtons[i].GetComponent<Image>().sprite = cardPuzzles[i];
+        }
+    }
+
+    public void RemoveRecentSameCards(List<int> removedCardIndexs)
+    {
+
+        for (int i = 0; i < removedCardIndexs.Count; i++)
+        {
+            RemoveSameCards(removedCardIndexs[i]);
+        }
+    }
+
+    public void RemoveSameCards(int index)
+    {
+        cardButtons[index].interactable = false;
+        cardButtons[index].image.color = new Color(0, 0, 0, 0);
+    }
+
+    public void ResetCardBackgroundByIndex(int index)
+    {
+        cardButtons[index].image.sprite = cardBackgroundSprite;
+    }
+
+    private void shuffleList<T>(List<T> list)
+    {
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = UnityEngine.Random.Range(0, n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+    }
+
     IEnumerator IShowPuzzle()
     {
         for (int i = 0; i < cardButtons.Count; i++)
@@ -87,53 +135,4 @@ public class CardManager : MonoBehaviour
             cardButtons[i].enabled = true;
         }
     }
-
-    public void ShuffleCards()
-    {
-        ShuffleList(cardPuzzles);
-    }
-
-    private void ShuffleList<T>(List<T> list)
-    {
-        int n = list.Count;
-        while (n > 1)
-        {
-            n--;
-            int k = UnityEngine.Random.Range(0, n + 1);
-            T value = list[k];
-            list[k] = list[n];
-            list[n] = value;
-        }
-    }
-
-    public void SetCardsToButtons()
-    {
-        for (int i = 0; i < cardButtons.Count; i++)
-        {
-            cardButtons[i].GetComponent<Image>().sprite = cardPuzzles[i];
-        }
-    }
-
-    public void removeRecentSameCards(List<int> removedCardIndexs)
-    {
-
-        for (int i = 0; i < removedCardIndexs.Count; i++)
-        {
-            removeSameCards(removedCardIndexs[i]);
-        }
-    }
-
-    public void removeSameCards(int index)
-    {
-        cardButtons[index].interactable = false;
-        cardButtons[index].image.color = new Color(0, 0, 0, 0);
-    }
-
-    public void ResetCardBackgroundByIndex(int index)
-    {
-        cardButtons[index].image.sprite = cardBackgroundSprite;
-    }
-
-    // Other card management methods...\
-
 }
